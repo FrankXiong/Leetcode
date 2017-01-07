@@ -29,6 +29,7 @@ Only three moves are needed (remember each move increments two elements):
  */
 var minMoves = function(nums) {
     let n = nums.length;
+    // In es5, you can get minimum by this way: Math.min.apply(null, arr)
     let min = Math.min(...nums);
     let sum = nums.reduce((a, b) => {
         return a + b;
